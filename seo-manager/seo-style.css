@@ -1,0 +1,58 @@
+/* --- Page Specific Styles (SEO Nav with Fixes) --- */
+
+.seo-nav-scroll-container {
+  background: var(--white);
+  padding: 0 25px;
+  border-radius: 6px;
+  box-shadow: var(--shadow);
+
+  /* FIX: Force full width and prevent collapsing */
+  width: 100%;
+  flex-shrink: 0;
+
+  /* Scroll Logic */
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.seo-nav-scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.seo-nav {
+  display: flex;
+  gap: 35px;
+
+  /* FIX: Ensure content pushes out to trigger scroll */
+  width: max-content;
+  min-width: 100%;
+}
+
+.seo-link {
+  display: inline-block;
+  padding: 18px 0;
+  color: #000;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  transition: color 0.3s, border-color 0.3s;
+  white-space: nowrap;
+}
+
+.seo-link:hover {
+  color: var(--primary-blue);
+}
+
+/* Active State Style */
+.seo-link.active {
+  color: var(--primary-blue);
+  border-bottom-color: var(--primary-blue);
+}
+
+.seo-form-card {
+  padding: 30px;
+  min-height: 600px;
+  flex-shrink: 0;
+}

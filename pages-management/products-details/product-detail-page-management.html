@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KD Machinex - Product Details Management</title>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+      /* --- Page Specific Styles --- */
+
+      /* Table Container Re-use */
+      .table-container {
+        width: 100%;
+        background: white;
+        border-radius: 9px;
+        box-shadow: 0px 4px 12px rgba(18, 67, 132, 0.15);
+        padding: 0; /* Removing padding to match the full-width header look */
+        overflow: hidden;
+      }
+
+      .table-responsive {
+        width: 100%;
+        overflow-x: auto;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      /* Header Styling to match design */
+      thead {
+        background-color: #efefef;
+        border-bottom: 1px solid #8f8f8f;
+      }
+
+      th {
+        padding: 18px 25px;
+        text-align: left;
+        color: #5b5b5b;
+        font-family: "Montserrat";
+        font-weight: 600;
+        font-size: 16px;
+        white-space: nowrap;
+      }
+
+      /* Row Styling */
+      tbody tr {
+        border-bottom: 1px solid #8f8f8f;
+        background: white;
+        transition: background 0.2s;
+      }
+      tbody tr:last-child {
+        border-bottom: none;
+      }
+      tbody tr:hover {
+        background: #f9f9f9;
+      }
+
+      td {
+        padding: 15px 25px;
+        vertical-align: middle;
+        color: #2c2c2c;
+        font-family: "Inter";
+        font-size: 16px;
+      }
+
+      /* Image Preview Icon Box */
+      .icon-preview {
+        width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        opacity: 0.3;
+      }
+
+      /* Square Edit Button (Specific to this design) */
+      .btn-square-edit {
+        width: 30px;
+        height: 30px;
+        background-color: #26a1f4;
+        border: none;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        color: white;
+        transition: opacity 0.3s;
+      }
+
+      .btn-square-edit:hover {
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <aside class="sidebar">
+        <div class="sidebar-logo">
+          <img src="../../assets/icons/sidebar-logo.png" alt="KD Machinex" />
+        </div>
+
+        <nav class="sidebar-nav">
+          <a href="../dashboard/index.html" class="nav-item">
+            <i data-lucide="layout-dashboard"></i> Dashboard
+          </a>
+
+          <div class="nav-group">
+            <a href="javascript:void(0)" class="nav-item dropdown-trigger">
+              <i data-lucide="copy"></i>
+              Pages
+              <i data-lucide="chevron-down" class="submenu-icon"></i>
+            </a>
+            <div class="submenu">
+              <a href="../home/hero-section-(home).html" class="sub-item"
+                >Home</a
+              >
+              <a href="../about/about-us-management.html" class="sub-item"
+                >About Us</a
+              >
+              <a href="../products/product-management.html" class="sub-item"
+                >Product</a
+              >
+              <a
+                href="../products-details/product-detail-page-management.html"
+                class="sub-item"
+                >Product Details</a
+              >
+              <a href="../new-launch/newLaunch.html" class="sub-item"
+                >New Launch</a
+              >
+              <a href="../event/event-management.html" class="sub-item"
+                >Event</a
+              >
+              <a href="../service/new-customer.html" class="sub-item"
+                >Service</a
+              >
+              <a href="../contact/contact-us-management.html" class="sub-item"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-group">
+            <a href="javascript:void(0)" class="nav-item dropdown-trigger">
+              <i data-lucide="database"></i>
+              Forms Data
+              <i data-lucide="chevron-down" class="submenu-icon"></i>
+            </a>
+            <div class="submenu">
+              <a
+                href="../../forms-data/new-customer-forms.html"
+                class="sub-item"
+                >New Customer</a
+              >
+              <a
+                href="../../forms-data/existing-customer-forms.html"
+                class="sub-item"
+                >Existing Customer</a
+              >
+              <a
+                href="../../forms-data/contact-info-forms.html"
+                class="sub-item"
+                >Contact info</a
+              >
+            </div>
+          </div>
+
+          <a href="../../seo-manager/home-seo.html" class="nav-item">
+            <i data-lucide="search"></i> SEO Manager
+          </a>
+
+          <div class="nav-group open">
+            <a
+              href="javascript:void(0)"
+              class="nav-item active dropdown-trigger"
+            >
+              <i data-lucide="settings"></i> Settings
+              <i data-lucide="chevron-down" class="submenu-icon"></i>
+            </a>
+            <div class="submenu">
+              <a
+                href="../../settings/general-setting.html"
+                class="sub-item active"
+                >General Settings</a
+              >
+              <a
+                href="../../settings/social-media-setting.html"
+                class="sub-item"
+                >Social Media Links</a
+              >
+              <a
+                href="../../settings/account-setting-(change-password).html"
+                class="sub-item"
+                >Account Settings</a
+              >
+            </div>
+          </div>
+        </nav>
+
+        <div class="sidebar-footer">
+          <button class="btn-logout">
+            <i data-lucide="log-out"></i> Log Out
+          </button>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="top-header">
+          <div class="header-left">
+            <h1>Pages</h1>
+          </div>
+          <div class="header-right">
+            <div class="notification">
+              <i data-lucide="bell"></i><span class="badge">4</span>
+            </div>
+            <div class="user-profile">
+              <div class="user-info">
+                <span class="user-name">John Doe</span>
+                <span class="user-role">Admin</span>
+              </div>
+              <img src="https://placehold.co/40" alt="Avatar" class="avatar" />
+            </div>
+          </div>
+        </header>
+
+        <h2 class="page-title">Product Details Page Management</h2>
+
+        <div class="table-container">
+          <div class="table-responsive">
+            <table>
+              <colgroup>
+                <col style="width: 100px" />
+                <col style="width: 30%" />
+                <col style="width: 50%" />
+                <col style="width: 100px" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>Image</th>
+                  <th>Product Title</th>
+                  <th>Product Description</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="icon-preview">
+                      <i data-lucide="image" size="28" color="#2C2C2C"></i>
+                    </div>
+                  </td>
+                  <td>Precision Engineering</td>
+                  <td>“Every machine is designed for...”</td>
+                  <td>
+                    <a href="product-detail-page-edit.html">
+                      <button class="btn-square-edit">
+                        <i data-lucide="pencil" size="00"></i>
+                      </button>
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="icon-preview">
+                      <i data-lucide="image" size="28" color="#2C2C2C"></i>
+                    </div>
+                  </td>
+                  <td>High Efficiency</td>
+                  <td>“Faster output with lower energy...”</td>
+                  <td>
+                    <a href="product-detail-page-edit.html">
+                      <button class="btn-square-edit">
+                        <i data-lucide="pencil" size="00"></i>
+                      </button>
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="icon-preview">
+                      <i data-lucide="image" size="28" color="#2C2C2C"></i>
+                    </div>
+                  </td>
+                  <td>Durability Guaranteed</td>
+                  <td>“Robust build quality designed to...”</td>
+                  <td>
+                    <a href="product-detail-page-edit.html">
+                      <button class="btn-square-edit">
+                        <i data-lucide="pencil" size="00"></i>
+                      </button>
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="icon-preview">
+                      <i data-lucide="image" size="28" color="#2C2C2C"></i>
+                    </div>
+                  </td>
+                  <td>Dedicated Support</td>
+                  <td>“Expert assistance and after-sales...”</td>
+                  <td>
+                    <a href="product-detail-page-edit.html">
+                      <button class="btn-square-edit">
+                        <i data-lucide="pencil" size="00"></i>
+                      </button>
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="icon-preview">
+                      <i data-lucide="image" size="28" color="#2C2C2C"></i>
+                    </div>
+                  </td>
+                  <td>Dedicated Support</td>
+                  <td>“Expert assistance and after-sales...”</td>
+                  <td>
+                    <a href="product-detail-page-edit.html">
+                      <button class="btn-square-edit">
+                        <i data-lucide="pencil" size="00"></i>
+                      </button>
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="icon-preview">
+                      <i data-lucide="image" size="28" color="#2C2C2C"></i>
+                    </div>
+                  </td>
+                  <td>Dedicated Support</td>
+                  <td>“Expert assistance and after-sales...”</td>
+                  <td>
+                    <a href="product-detail-page-edit.html">
+                      <button class="btn-square-edit">
+                        <i data-lucide="pencil" size="00"></i>
+                      </button>
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="icon-preview">
+                      <i data-lucide="image" size="28" color="#2C2C2C"></i>
+                    </div>
+                  </td>
+                  <td>Dedicated Support</td>
+                  <td>“Expert assistance and after-sales...”</td>
+                  <td>
+                    <a href="product-detail-page-edit.html">
+                      <button class="btn-square-edit">
+                        <i data-lucide="pencil" size="00"></i>
+                      </button>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="../../assets/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KD Machinex - Dashboard</title>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <aside class="sidebar">
+        <div class="sidebar-logo">
+          <img src="../../assets/icons/sidebar-logo.png" alt="KD Machinex" />
+        </div>
+
+        <nav class="sidebar-nav">
+          <a href="../dashboard/index.html" class="nav-item">
+            <i data-lucide="layout-dashboard"></i> Dashboard
+          </a>
+
+          <div class="nav-group">
+            <a href="javascript:void(0)" class="nav-item dropdown-trigger">
+              <i data-lucide="copy"></i>
+              Pages
+              <i data-lucide="chevron-down" class="submenu-icon"></i>
+            </a>
+            <div class="submenu">
+              <a href="../home/hero-section-(home).html" class="sub-item"
+                >Home</a
+              >
+              <a href="../about/about-us-management.html" class="sub-item"
+                >About Us</a
+              >
+              <a href="../products/product-management.html" class="sub-item"
+                >Product</a
+              >
+              <a
+                href="../products-details/product-detail-page-management.html"
+                class="sub-item"
+                >Product Details</a
+              >
+              <a href="../new-launch/newLaunch.html" class="sub-item"
+                >New Launch</a
+              >
+              <a href="../event/event-management.html" class="sub-item"
+                >Event</a
+              >
+              <a href="../service/new-customer.html" class="sub-item"
+                >Service</a
+              >
+              <a href="../contact/contact-us-management.html" class="sub-item"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+
+          <div class="nav-group">
+            <a href="javascript:void(0)" class="nav-item dropdown-trigger">
+              <i data-lucide="database"></i>
+              Forms Data
+              <i data-lucide="chevron-down" class="submenu-icon"></i>
+            </a>
+            <div class="submenu">
+              <a
+                href="../../forms-data/new-customer-forms.html"
+                class="sub-item"
+                >New Customer</a
+              >
+              <a
+                href="../../forms-data/existing-customer-forms.html"
+                class="sub-item"
+                >Existing Customer</a
+              >
+              <a
+                href="../../forms-data/contact-info-forms.html"
+                class="sub-item"
+                >Contact info</a
+              >
+            </div>
+          </div>
+
+          <a href="../../seo-manager/home-seo.html" class="nav-item">
+            <i data-lucide="search"></i> SEO Manager
+          </a>
+
+          <div class="nav-group open">
+            <a
+              href="javascript:void(0)"
+              class="nav-item active dropdown-trigger"
+            >
+              <i data-lucide="settings"></i> Settings
+              <i data-lucide="chevron-down" class="submenu-icon"></i>
+            </a>
+            <div class="submenu">
+              <a
+                href="../../settings/general-setting.html"
+                class="sub-item active"
+                >General Settings</a
+              >
+              <a
+                href="../../settings/social-media-setting.html"
+                class="sub-item"
+                >Social Media Links</a
+              >
+              <a
+                href="../../settings/account-setting-(change-password).html"
+                class="sub-item"
+                >Account Settings</a
+              >
+            </div>
+          </div>
+        </nav>
+
+        <div class="sidebar-footer">
+          <button class="btn-logout">
+            <i data-lucide="log-out"></i> Log Out
+          </button>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="top-header">
+          <div class="header-left">
+            <h1>Dashboard</h1>
+          </div>
+          <div class="header-right">
+            <div class="notification">
+              <i data-lucide="bell"></i><span class="badge">4</span>
+            </div>
+            <div class="user-profile">
+              <div class="user-info">
+                <span class="user-name">John Doe</span>
+                <span class="user-role">Admin</span>
+              </div>
+              <img src="https://placehold.co/40" alt="Avatar" class="avatar" />
+            </div>
+          </div>
+        </header>
+
+        <section class="stats-grid">
+          <div class="stat-card">
+            <p>Total Product</p>
+            <h3>120</h3>
+          </div>
+          <div class="stat-card">
+            <p>New Launches</p>
+            <h3>2</h3>
+          </div>
+          <div class="stat-card">
+            <p>Upcoming Event</p>
+            <h3>2</h3>
+          </div>
+          <div class="stat-card">
+            <p>Service Request</p>
+            <h3>25</h3>
+          </div>
+        </section>
+
+        <div class="content-grid">
+          <div class="card table-container">
+            <div class="card-header">
+              <h3>Recent From Submission</h3>
+            </div>
+            <div class="table-responsive">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>From Type</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>John Doe</td>
+                    <td>johan.doe@gmail.com</td>
+                    <td>Quote Request</td>
+                    <td>9 Sept 2025</td>
+                    <td><span class="status-new">New</span></td>
+                  </tr>
+                  <tr>
+                    <td>John Doe</td>
+                    <td>johan.doe@gmail.com</td>
+                    <td>New Customer</td>
+                    <td>9 Sept 2025</td>
+                    <td><span class="status-new">New</span></td>
+                  </tr>
+                  <tr>
+                    <td>John Doe</td>
+                    <td>johan.doe@gmail.com</td>
+                    <td>Quote Request</td>
+                    <td>9 Sept 2025</td>
+                    <td><span class="status-new">New</span></td>
+                  </tr>
+                  <tr>
+                    <td>John Doe</td>
+                    <td>johan.doe@gmail.com</td>
+                    <td>Quote Request</td>
+                    <td>9 Sept 2025</td>
+                    <td><span class="status-new">New</span></td>
+                  </tr>
+                  <tr>
+                    <td>John Doe</td>
+                    <td>johan.doe@gmail.com</td>
+                    <td>Quote Request</td>
+                    <td>9 Sept 2025</td>
+                    <td><span class="status-new">New</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="charts-column">
+            <div class="card chart-card">
+              <h3>Request by Type</h3>
+              <div class="donut-chart-placeholder"></div>
+              <div class="legend">
+                <div class="legend-item">
+                  <span class="dot blue-1"></span> Quote
+                </div>
+                <div class="legend-item">
+                  <span class="dot blue-2"></span> New
+                </div>
+                <div class="legend-item">
+                  <span class="dot blue-3"></span> Service
+                </div>
+              </div>
+            </div>
+
+            <div class="card chart-card">
+              <h3>Monthly Submissions</h3>
+              <div class="bar-chart-placeholder">
+                <div class="bar" style="height: 60%"></div>
+                <div class="bar" style="height: 80%"></div>
+                <div class="bar" style="height: 40%"></div>
+                <div class="bar" style="height: 90%"></div>
+                <div class="bar" style="height: 50%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="../../assets/js/script.js"></script>
+  </body>
+</html>
