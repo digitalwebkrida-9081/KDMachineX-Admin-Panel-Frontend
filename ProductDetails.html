@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kd machinex</title>
+    <!-- css link  -->
+    <link rel="stylesheet" href="Style.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- boosterap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- font awsome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="container">
+        <p class="mb-0">
+          "High-Performance Machines · Affordable Prices · Pan India Delivery"
+        </p>
+      </div>
+    </div>
+
+    <!-- Main Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white fixed-navbar sticky-top"
+    >
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="Home.html">
+          <img src="image/kd logo 1.png" alt="KD Machines" class="logo" />
+        </a>
+
+        <!-- Mobile Toggle Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Nav Items -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                style="color: #124384"
+                href="/Home.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/About.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="/Product.html"
+                id="productsDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Products
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                <li>
+                  <a class="dropdown-item" href="/ProductDetails.html">Product 1</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/ProductDetails.html">Product 2</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/ProductDetails.html">Product 3</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="NewLaunch.html">New Launch</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="eventDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Event
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="eventDropdown">
+                <li><a class="dropdown-item" href="UpcomingEvent.html">Upcoming Events</a></li>
+                <li><a class="dropdown-item" href="PastEvent.html">Past Events</a></li>
+              </ul>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Career</a>
+            </li> -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="servicesDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Services
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                <li><a class="dropdown-item" href="Service(newCustomer).html">New Customer</a></li>
+                <li><a class="dropdown-item" href="Service(existingCustomer).html">Existing Customer</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contact-us.html">Contact Us</a>
+            </li>
+          </ul>
+
+          <!-- Right Side Buttons -->
+          <div class="d-flex align-items-center gap-3">
+            <a
+              href="Contact-us.html"
+              class="btn btn-quotes"
+              style="
+                background-color: #134384;
+                color: #ffffff;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+              "
+            >
+              Request Quote
+            </a>
+            <a href="#" class="whatsapp-btn">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+                alt="WhatsApp"
+                width="40"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- section-1 -->
+
+    <div class="container py-4">
+      <div class="row g-4 align-items-start">
+        <!-- Thumbnails + Main Image -->
+        <div class="col-lg-6 d-flex gap-3">
+          <!-- Thumbnail List -->
+          <div class="d-flex flex-column gap-2">
+            <div class="thumbnail active" onclick="changeImage(0)">
+              <img
+                src="image/productdeatils.png"
+                class="img-fluid"
+                alt="Machine View 1"
+              />
+            </div>
+            <div class="thumbnail" onclick="changeImage(1)">
+              <img
+                src="image/productdeatils.png"
+                class="img-fluid"
+                alt="Machine View 2"
+              />
+            </div>
+            <div class="thumbnail" onclick="changeImage(2)">
+              <img
+                src="image/productdeatils.png"
+                class="img-fluid"
+                alt="Machine View 3"
+              />
+            </div>
+          </div>
+
+          <!-- Main Image -->
+          <div class="flex-grow-1">
+            <img
+              id="mainImg"
+              src="image/Group 1000006170.png"
+              class="img-fluid main-big-img"
+              alt="Main Machine View"
+            />
+          </div>
+        </div>
+
+        <!-- Content Section -->
+        <div class="col-lg-6">
+          <h1 class="fw-bold mb-3">
+            Introducing the Next-Gen Roll-to-Roll Paperless Saree Machine
+          </h1>
+
+          <p class="description mb-4">
+            "Experience faster production speeds, reduced energy consumption,
+            and flawless printing quality with our latest innovation. Designed
+            for modern textile businesses, this new launch ensures higher
+            efficiency, consistent results, and long-term reliability for your
+            operations."
+          </p>
+
+          <div class="d-flex gap-3 mb-4">
+            <button class="btn btn-primary px-4">Book a demo</button>
+            <button class="btn btn-outline-secondary px-4">
+              Request Quote
+            </button>
+          </div>
+
+          <div class="d-flex gap-3 social-icons">
+            <a href="#" class="social-icon linkedin">
+              <!-- LinkedIn icon -->
+              <img src="image/linkdin.png" alt="LinkedIn" />
+            </a>
+            <a href="#" class="social-icon instagram">
+              <!-- Instagram icon -->
+              <img src="image/instagram (3) 1.png" alt="Instagram" />
+            </a>
+            <a href="#" class="social-icon facebook">
+              <!-- Facebook icon -->
+              <img src="image/facebook (3) 1.png" alt="Facebook" />
+            </a>
+            <a href="#" class="social-icon youtube">
+              <!-- YouTube icon -->
+              <img src="image/youtube 1.png" alt="YouTube" />
+            </a>
+            <a href="#" class="social-icon whatsapp">
+              <!-- WhatsApp icon -->
+              <img src="image/Whatsapp-icon.png" alt="WhatsApp" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- section 2  -->
+
+    <section class="product-info-tabs py-5">
+      <div class="container">
+        <ul class="nav nav-tabs border-0" id="productTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="description-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#description"
+              type="button"
+              role="tab"
+            >
+              Description
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="specifications-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#specifications"
+              type="button"
+              role="tab"
+            >
+              Specifications
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="maintenance-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#maintenance"
+              type="button"
+              role="tab"
+            >
+              Maintenance
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="safety-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#safety"
+              type="button"
+              role="tab"
+            >
+              Safety Considerations
+            </button>
+          </li>
+        </ul>
+
+        <div
+          class="tab-content custom-tab-bg p-4 p-md-5"
+          id="productTabContent"
+        >
+          <div
+            class="tab-pane fade show active"
+            id="description"
+            role="tabpanel"
+          >
+            <ul class="list-unstyled info-list">
+              <li class="d-flex align-items-start mb-4">
+                <span class="bullet-square mt-2 me-3"></span>
+                <div>
+                  <strong>High-Speed DSP Control:</strong>
+                  <p class="text-muted mb-0">
+                    Utilizes advanced 65-bit high-speed DSP control technology
+                    for continuous and fast curve cutting with optimized
+                    processing routes, improving efficiency.
+                  </p>
+                </div>
+              </li>
+              <li class="d-flex align-items-start mb-4">
+                <span class="bullet-square mt-2 me-3"></span>
+                <div>
+                  <strong>Optimized Processing Routes:</strong>
+                  <p class="text-muted mb-0">
+                    The system automatically calculates the most efficient path
+                    to reduce idle time and maximize production output for
+                    large-scale textile operations.
+                  </p>
+                </div>
+              </li>
+              <li class="d-flex align-items-start mb-4">
+                <span class="bullet-square mt-2 me-3"></span>
+                <div>
+                  <strong>Continuous Curve Cutting:</strong>
+                  <p class="text-muted mb-0">
+                    Achieve smooth, jagged-free edges on delicate fabrics even
+                    at high speeds, ensuring premium quality for saree and
+                    garment manufacturing.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="tab-pane fade" id="specifications" role="tabpanel">
+            <p>Technical specifications and dimensions go here...</p>
+          </div>
+          <div class="tab-pane fade" id="maintenance" role="tabpanel">
+            <p>Maintenance schedules and spare parts info go here...</p>
+          </div>
+          <div class="tab-pane fade" id="safety" role="tabpanel">
+            <p>Safety guidelines and emergency stop procedures go here...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section - 3 -->
+
+    <section class="recommended-products py-5">
+      <div class="container">
+        <h2 class="mb-4">
+          <span class="text-dark fw-bold">Recommended</span>
+          <span style="color: #124384" class="fw-bold"> Products</span>
+        </h2>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 product-card border-0 shadow-sm">
+              <div class="p-3">
+                <img
+                  src="image/maichine.png"
+                  class="card-img-top rounded"
+                  alt="Automatic Fusing Machine"
+                />
+              </div>
+              <div
+                class="card-body text-center d-flex flex-column justify-content-between"
+              >
+                <div>
+                  <h5 class="card-title product-name mb-3">
+                    Automatic Fusing Machine AP
+                  </h5>
+                  <p class="card-text product-desc text-muted px-2">
+                    “Seamless fabric bonding with consistent accuracy and
+                    durability.”
+                  </p>
+                </div>
+                <div class="mt-4">
+                  <a href="#" class="btn btn-outline-primary-custom px-4"
+                    >View Details</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 product-card border-0 shadow-sm">
+              <div class="p-3">
+                <img
+                  src="image/maichine.png"
+                  class="card-img-top rounded"
+                  alt="Automatic Fusing Machine"
+                />
+              </div>
+              <div
+                class="card-body text-center d-flex flex-column justify-content-between"
+              >
+                <div>
+                  <h5 class="card-title product-name mb-3">
+                    Automatic Fusing Machine AP
+                  </h5>
+                  <p class="card-text product-desc text-muted px-2">
+                    “Seamless fabric bonding with consistent accuracy and
+                    durability.”
+                  </p>
+                </div>
+                <div class="mt-4">
+                  <a href="#" class="btn btn-outline-primary-custom px-4"
+                    >View Details</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 product-card border-0 shadow-sm">
+              <div class="p-3">
+                <img
+                  src="image/maichine.png"
+                  class="card-img-top rounded"
+                  alt="Automatic Fusing Machine"
+                />
+              </div>
+              <div
+                class="card-body text-center d-flex flex-column justify-content-between"
+              >
+                <div>
+                  <h5 class="card-title product-name mb-3">
+                    Automatic Fusing Machine AP
+                  </h5>
+                  <p class="card-text product-desc text-muted px-2">
+                    “Seamless fabric bonding with consistent accuracy and
+                    durability.”
+                  </p>
+                </div>
+                <div class="mt-4">
+                  <a href="#" class="btn btn-outline-primary-custom px-4"
+                    >View Details</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 product-card border-0 shadow-sm">
+              <div class="p-3">
+                <img
+                  src="image/maichine.png"
+                  class="card-img-top rounded"
+                  alt="Automatic Fusing Machine"
+                />
+              </div>
+              <div
+                class="card-body text-center d-flex flex-column justify-content-between"
+              >
+                <div>
+                  <h5 class="card-title product-name mb-3">
+                    Automatic Fusing Machine AP
+                  </h5>
+                  <p class="card-text product-desc text-muted px-2">
+                    “Seamless fabric bonding with consistent accuracy and
+                    durability.”
+                  </p>
+                </div>
+                <div class="mt-4">
+                  <a href="#" class="btn btn-outline-primary-custom px-4"
+                    >View Details</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer page  -->
+    <section class="footers mt-5">
+      <footer class="footer-bg text-white pt-5 pb-3">
+        <div class="container">
+          <div class="row gy-4">
+            <!-- Logo & Social Icons -->
+            <div class="col-md-3 col-sm-12 text-center text-md-start">
+              <img
+                src="image/footer logo.png"
+                alt="KD Machinex Logo"
+                class="footer-logo"
+              />
+
+              <div class="social-icons mt-3">
+                <a href="#"><img src="image/instagram (3) 1.png" alt="" /></a>
+                <a href="#"><img src="image/linkdin.png" alt="" /></a>
+                <a href="#"><img src="image/youtube 1.png" alt="" /></a>
+                <a href="#"><img src="image/facebook (3) 1.png" alt="" /></a>
+              </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-md-3 col-sm-6">
+              <h5 class="footer-title">Quick Links</h5>
+              <ul class="list-unstyled footer-links">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="NewLaunch.html">New Launch</a></li>
+                <li><a href="UpcomingEvent.html">Event</a></li>
+                <!-- <li><a href="#">Career</a></li> -->
+                <li><a href="Service(newCustomer).html">Services</a></li>
+                <li><a href="Contact-us.html">Contact Us</a></li>
+              </ul>
+            </div>
+
+            <!-- Our Products -->
+            <div class="col-md-3 col-sm-6">
+              <h5 class="footer-title">Our Products</h5>
+              <ul class="list-unstyled footer-links">
+                <li><a href="#">Heat Transfer Machine</a></li>
+                <li><a href="#">Double Plate Heat Transfer Machine</a></li>
+                <li><a href="#">Laser Cutting & Engraving Machine</a></li>
+                <li><a href="#">Roll to Roll Paperless Machines</a></li>
+                <li><a href="#">Fusing Machine</a></li>
+              </ul>
+            </div>
+
+            <!-- Contact Us -->
+            <div class="col-md-3 col-sm-12">
+              <h5 class="footer-title">Contact Us</h5>
+              <ul class="list-unstyled footer-contact">
+                <li><i class="far fa-envelope"></i> kdmachinex@gmail.com</li>
+                <li><i class="fa-solid fa-phone"></i> +91 97376 35923</li>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  Ground Floor, Krishna Industrial Society, 12, Punagam Rd, near
+                  Punagam Lake, Pushpak Nagar Society, Punagam, Varachha, Surat,
+                  Gujarat 395011
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <hr class="footer-line" />
+
+          <p class="text-center mt-3 mb-0">
+            © Copyrights 2025 All Rights Reserved KD Machinex
+          </p>
+        </div>
+      </footer>
+    </section>
+
+    <script>
+      const images = [
+        "https://via.placeholder.com/600x400/4A90E2/ffffff?text=Main+Machine+View+1",
+        "https://via.placeholder.com/600x400/7CB342/ffffff?text=Main+Machine+View+2",
+        "https://via.placeholder.com/600x400/E53935/ffffff?text=Main+Machine+View+3",
+      ];
+
+      function changeImage(index) {
+        const mainImg = document.getElementById("mainImg");
+        const thumbnails = document.querySelectorAll(".thumbnail");
+
+        // Update main image
+        mainImg.src = images[index];
+
+        // Update active thumbnail
+        thumbnails.forEach((thumb, i) => {
+          if (i === index) {
+            thumb.classList.add("active");
+          } else {
+            thumb.classList.remove("active");
+          }
+        });
+      }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

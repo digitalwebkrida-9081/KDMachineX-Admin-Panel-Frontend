@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About us</title>
+    <title>Kd machinex</title>
     <!-- css link  -->
     <link rel="stylesheet" href="Style.css" />
 
@@ -32,8 +32,6 @@
     />
   </head>
   <body>
-    <!-- navbar -->
-
     <!-- Top Bar -->
     <div class="top-bar">
       <div class="container">
@@ -70,20 +68,20 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item">
-              <a class="nav-link" href="/Home.html">Home</a>
-            </li>
-            <li class="nav-item">
               <a
                 class="nav-link active"
                 style="color: #124384"
-                href="/About.html"
-                >About Us</a
+                href="/Home.html"
+                >Home</a
               >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/About.html">About Us</a>
             </li>
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
-                href="Product.html"
+                href="/Product.html"
                 id="productsDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -93,17 +91,17 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="productsDropdown">
                 <li>
-                  <a class="dropdown-item" href="ProductDetails.html"
+                  <a class="dropdown-item" href="/ProductDetails.html"
                     >Product 1</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="ProductDetails.html"
+                  <a class="dropdown-item" href="/ProductDetails.html"
                     >Product 2</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="ProductDetails.html"
+                  <a class="dropdown-item" href="/ProductDetails.html"
                     >Product 3</a
                   >
                 </li>
@@ -125,7 +123,7 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="eventDropdown">
                 <li>
-                  <a class="dropdown-item" href="UpcomingEvent.html"
+                  <a class="dropdown-item" href="./UpcomingEvent.html"
                     >Upcoming Events</a
                   >
                 </li>
@@ -191,82 +189,109 @@
       </div>
     </nav>
 
-    <!-- end -->
-
     <!-- section-1 -->
-    <section class="about py-5">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-10 col-lg-8">
-            <div class="main-about text-center p-4 rounded">
-              <div class="about-title mb-2">
-                <h4>About KD Machinex</h4>
+
+    <section class="new-launch-hero">
+      <div class="container-fluid px-0">
+        <div
+          class="hero-banner-wrapper d-flex align-items-center justify-content-center"
+        >
+          <div class="text-center hero-text-box">
+            <h1 class="new-launch-title">New Customer</h1>
+            <p class="new-launch-subtitle">
+              “Start your journey with us and discover the difference.”
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section 2  -->
+
+    <div class="CONTACT" style="background-color: #fafafa">
+      <section class="contact-section py-5">
+        <div class="container">
+          <h3 class="text-center mb-4">Contact Us</h3>
+          <form class="contact-form p-4 rounded">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="firstName" class="form-label fw-semibold"
+                  >First Name</label
+                >
+                <input
+                  type="text"
+                  id="firstName"
+                  class="form-control"
+                  placeholder="First Name"
+                />
               </div>
-              <span class="innovating">
-                “Innovating Textile & Heat Transfer Machines Since 2019”
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- end -->
-
-    <!-- section-2 -->
-    <section class="kdmachine">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6 col-md-12 order-2 order-lg-1">
-            <div class="kd-img">
-              <img
-                src="image/Rectangle 2.png"
-                alt="KD Machinex Office"
-                class="img-kd"
-              />
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-12 order-1 order-lg-2">
-            <div class="about-content">
-              <div class="about-heading">
-                <h1>About KD Machinex</h1>
+              <div class="col-md-6">
+                <label for="lastName" class="form-label fw-semibold"
+                  >Last Name</label
+                >
+                <input
+                  type="text"
+                  id="lastName"
+                  class="form-control"
+                  placeholder="Last Name"
+                />
               </div>
-              <p class="about-description">
-                At <strong>KD Machinex</strong>, we specialize in delivering
-                high-performance textile and printing machinery designed to meet
-                the evolving needs of modern industries. With a strong focus on
-                quality, innovation, and reliability, our machines help
-                businesses achieve precision results with minimal maintenance.
-                Backed by expert support and pan-India delivery, we are
-                committed to empowering manufacturers with technology they can
-                trust.
-              </p>
+              <div class="col-md-6">
+                <label for="phoneNumber" class="form-label fw-semibold"
+                  >Phone Number</label
+                >
+                <input
+                  type="tel"
+                  id="phoneNumber"
+                  class="form-control"
+                  placeholder="Enter Your Contact"
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="emailAddress" class="form-label fw-semibold"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  id="emailAddress"
+                  class="form-control"
+                  placeholder="Email address"
+                />
+              </div>
+              <div class="col-12">
+                <label for="services" class="form-label fw-semibold"
+                  >Services</label
+                >
+                <select id="services" class="form-select">
+                  <option selected disabled>Select Your Services</option>
+                  <option value="service1">Service 1</option>
+                  <option value="service2">Service 2</option>
+                  <option value="service3">Service 3</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label for="requirement" class="form-label fw-semibold"
+                  >Requirement</label
+                >
+                <textarea
+                  id="requirement"
+                  class="form-control"
+                  rows="4"
+                  placeholder="Other Requirement Details......"
+                ></textarea>
+              </div>
+              <div class="col-12 text-center">
+                <button type="submit" class="submit-btn w-100">
+                  Send Message
+                </button>
+              </div>
             </div>
-          </div>
+          </form>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
-    <!-- end -->
-
-    <!-- section-3 -->
-    <section class="scale" style="background-color: #fafafa">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-8 text-center">
-            <div class="scales">
-              <h2 class="scales-title">
-                “Ready to scale your production with KD Machinex?”
-              </h2>
-              <button class="btn-quote mt-3">Request Quote</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- end -->
-
-    <!-- Footer section -->
+    <!-- footer page  -->
     <section class="footers mt-5">
       <footer class="footer-bg text-white pt-5 pb-3">
         <div class="container">
@@ -337,8 +362,6 @@
         </div>
       </footer>
     </section>
-
-    <!-- end -->
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 

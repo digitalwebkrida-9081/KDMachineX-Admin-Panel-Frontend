@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About us</title>
+    <title>Kd machinex</title>
     <!-- css link  -->
     <link rel="stylesheet" href="Style.css" />
 
@@ -32,8 +32,6 @@
     />
   </head>
   <body>
-    <!-- navbar -->
-
     <!-- Top Bar -->
     <div class="top-bar">
       <div class="container">
@@ -70,20 +68,20 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item">
-              <a class="nav-link" href="/Home.html">Home</a>
-            </li>
-            <li class="nav-item">
               <a
                 class="nav-link active"
                 style="color: #124384"
-                href="/About.html"
-                >About Us</a
+                href="/Home.html"
+                >Home</a
               >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/About.html">About Us</a>
             </li>
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
-                href="Product.html"
+                href="/Product.html"
                 id="productsDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -125,12 +123,14 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="eventDropdown">
                 <li>
-                  <a class="dropdown-item" href="UpcomingEvent.html"
+                  <a class="dropdown-item" href="./UpcomingEvent.html"
                     >Upcoming Events</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="PastEvent.html">Past Events</a>
+                  <a class="dropdown-item" href="./PastEvent.html"
+                    >Past Events</a
+                  >
                 </li>
               </ul>
             </li>
@@ -191,83 +191,197 @@
       </div>
     </nav>
 
-    <!-- end -->
-
     <!-- section-1 -->
-    <section class="about py-5">
+
+    <section class="new-launch-hero">
+      <div class="container-fluid px-0">
+        <div
+          class="hero-banner-wrapper d-flex align-items-center justify-content-center"
+        >
+          <div class="text-center hero-text-box">
+            <h1 class="new-launch-title">Request for a quote</h1>
+            <p class="new-launch-subtitle">
+              “Fill out the form below and receive a customized quote quickly.”
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section 2  -->
+    <section class="contact-us-section py-5">
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-10 col-lg-8">
-            <div class="main-about text-center p-4 rounded">
-              <div class="about-title mb-2">
-                <h4>About KD Machinex</h4>
+        <div class="row g-5">
+          <div class="col-lg-8">
+            <div class="contact-form-card p-4 p-md-5">
+              <form>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label fw-bold">First Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="First Name"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label fw-bold">Last Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Last Name"
+                    />
+                  </div>
+
+                  <div class="col-md-6">
+                    <label class="form-label fw-bold">Phone Number</label>
+                    <div class="input-group">
+                      <span class="input-group-text bg-white border-end-0">
+                        <img
+                          src="https://flagcdn.com/w20/in.png"
+                          width="20"
+                          alt="India"
+                        />
+                        <span class="ms-2">+91</span>
+                      </span>
+                      <input
+                        type="text"
+                        class="form-control border-start-0"
+                        placeholder="Enter Your Contact"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label fw-bold">Email address</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Email address"
+                    />
+                  </div>
+
+                  <div class="col-12">
+                    <label class="form-label fw-bold">Services</label>
+                    <select class="form-select">
+                      <option selected disabled>Select Your Services</option>
+                      <option>Heat Transfer Machine</option>
+                      <option>Laser Cutting</option>
+                      <option>Fusing Machine</option>
+                    </select>
+                  </div>
+
+                  <div class="col-12">
+                    <label class="form-label fw-bold">Requirement</label>
+                    <textarea
+                      class="form-control"
+                      rows="5"
+                      placeholder="Other Requirement Details......"
+                    ></textarea>
+                  </div>
+
+                  <div class="col-12 mt-4">
+                    <button
+                      type="submit"
+                      class="btn btn-primary w-100 py-2 fs-5 fw-semibold"
+                      style="
+                        border-radius: 11px;
+                        background-color: var(--primary-color);
+                      "
+                    >
+                      Send Message
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="contact-sidebar p-4 shadow-sm h-100">
+              <h3 class="fw-medium mb-1">
+                Get in touch with
+                <span style="color: var(--primary-color); font-weight: 700"
+                  >us</span
+                >
+              </h3>
+              <p class="text-muted mb-5">You can also reach out to us at</p>
+
+              <div class="d-flex flex-column gap-4">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="sidebar-icon-circle">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <div>
+                    <h6 class="mb-0 fw-bold">Surat, Gujarat, India</h6>
+                    <small class="text-muted">Surat, India, 395011</small>
+                  </div>
+                </div>
+
+                <div class="d-flex align-items-center gap-3">
+                  <div class="sidebar-icon-circle">
+                    <i class="fa-solid fa-phone"></i>
+                  </div>
+                  <div>
+                    <h6 class="mb-0 fw-bold">Call Us On</h6>
+                    <small class="text-muted">+91 97376 35923</small>
+                  </div>
+                </div>
+
+                <div class="d-flex align-items-center gap-3">
+                  <div class="sidebar-icon-circle">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div>
+                    <h6 class="mb-0 fw-bold">Mail Us @</h6>
+                    <small class="text-muted">kdmachinex@gmail.com</small>
+                  </div>
+                </div>
+
+                <div class="d-flex align-items-center gap-3">
+                  <div class="sidebar-icon-circle">
+                    <i class="fa-solid fa-globe"></i>
+                  </div>
+                  <div>
+                    <h6 class="mb-0 fw-bold">Website</h6>
+                    <small class="text-muted">www.kdmachinex.com</small>
+                  </div>
+                </div>
               </div>
-              <span class="innovating">
-                “Innovating Textile & Heat Transfer Machines Since 2019”
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- end -->
-
-    <!-- section-2 -->
-    <section class="kdmachine">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6 col-md-12 order-2 order-lg-1">
-            <div class="kd-img">
-              <img
-                src="image/Rectangle 2.png"
-                alt="KD Machinex Office"
-                class="img-kd"
-              />
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-12 order-1 order-lg-2">
-            <div class="about-content">
-              <div class="about-heading">
-                <h1>About KD Machinex</h1>
-              </div>
-              <p class="about-description">
-                At <strong>KD Machinex</strong>, we specialize in delivering
-                high-performance textile and printing machinery designed to meet
-                the evolving needs of modern industries. With a strong focus on
-                quality, innovation, and reliability, our machines help
-                businesses achieve precision results with minimal maintenance.
-                Backed by expert support and pan-India delivery, we are
-                committed to empowering manufacturers with technology they can
-                trust.
-              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- end -->
+    <!-- 
+    =============================
 
-    <!-- section-3 -->
-    <section class="scale" style="background-color: #fafafa">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-8 text-center">
-            <div class="scales">
-              <h2 class="scales-title">
-                “Ready to scale your production with KD Machinex?”
-              </h2>
-              <button class="btn-quote mt-3">Request Quote</button>
-            </div>
-          </div>
+    MAp integrations  
+
+    ============================= -->
+
+    <section class="map-section py-0">
+      <div class="container-fluid p-0">
+        <div
+          class="map-container"
+          style="width: 100%; height: 450px; overflow: hidden"
+        >
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.86339458925!2d72.8718047759557!3d21.19757628049615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04fbc55f55555%3A0x7d0614534720610d!2sKrishna%20Industrial%20Society!5e0!3m2!1sen!2sin!4v1709123456789!5m2!1sen!2sin"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
         </div>
       </div>
     </section>
 
-    <!-- end -->
-
-    <!-- Footer section -->
-    <section class="footers mt-5">
+    <!-- footer page  -->
+    <section class="footers">
       <footer class="footer-bg text-white pt-5 pb-3">
         <div class="container">
           <div class="row gy-4">
@@ -296,7 +410,7 @@
                 <li><a href="NewLaunch.html">New Launch</a></li>
                 <li><a href="UpcomingEvent.html">Event</a></li>
                 <!-- <li><a href="#">Career</a></li> -->
-                <li><a href="Service(newCustomer).html">Services</a></li>
+                <li><a href="UpcomingEvent.html">Services</a></li>
                 <li><a href="Contact-us.html">Contact Us</a></li>
               </ul>
             </div>
@@ -337,8 +451,6 @@
         </div>
       </footer>
     </section>
-
-    <!-- end -->
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
